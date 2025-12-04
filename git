@@ -1,0 +1,15 @@
+todo_list = []
+
+def add_task(task):
+    todo_list.append(task)
+    return f"Task added: {task}"
+
+def show_tasks():
+    return "\n".join(todo_list)
+
+if __name__ == "__main__":
+    print(add_task("Learn Git"))
+    print(add_task("Push Code to GitHub"))
+    print("Your Tasks:")
+    print(show_tasks())
+
