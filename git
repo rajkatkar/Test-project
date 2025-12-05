@@ -1,0 +1,9 @@
+def charge_card(amount):
+    if amount <= 0:
+        raise ValueError("Amount must be positive")
+    return f"Charged {amount} successfully"
+
+
+if __name__ == "__main__":
+    print(charge_card(100))
+
