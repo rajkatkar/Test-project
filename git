@@ -20,3 +20,8 @@ def remove_task(task):
         return f"Removed: {task}"
     return "Task not found"
 
+def show_tasks():
+    if not todo_list:
+        return "No tasks!"
+    return "\n".join(todo_list)
+
